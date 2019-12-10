@@ -31,15 +31,15 @@ class MainActivity : AppCompatActivity() {
 
             val underweight : ImageView = findViewById(R.id.imageViewProfile)
             underweight.setImageResource(R.drawable.under)
-            textViewBMI.setText("BMI: " + bmi.toString())
+            textViewBMI.setText("BMI: " + bmi)
         }else if(bmi.toDouble() > 18.5 && bmi.toDouble() < 24.9 ){
             val normal : ImageView = findViewById(R.id.imageViewProfile)
             normal.setImageResource(R.drawable.normal)
-            textViewBMI.setText("BMI: " + bmi.toString())
+            textViewBMI.setText("BMI: " + bmi)
         }else if(bmi.toDouble() > 25){
             val over : ImageView = findViewById(R.id.imageViewProfile)
             over.setImageResource(R.drawable.over)
-            textViewBMI.setText("BMI: " + bmi.toString())
+            textViewBMI.setText("BMI: " + bmi)
         }else{
             val default : ImageView = findViewById(R.id.imageViewProfile)
             default.setImageResource(R.drawable.empty)
